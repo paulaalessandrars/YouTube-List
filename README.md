@@ -8,8 +8,8 @@ Esta aplicação simula uma interface de listagem de vídeos do YouTube, permiti
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **HTML:** Para a estrutura da página.
-- **CSS:** Para a estilização e layout da página, utilizando Grid Layout.
+- **HTML5:** Para a estrutura da página.
+- **CSS3:** Para a estilização e layout da página, utilizando Grid Layout.
 - **Imagens:** Ícones e thumbnails para criar uma experiência visual similar ao YouTube.
 
 ## 📋 Estrutura do Projeto
