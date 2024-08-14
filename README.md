@@ -1,4 +1,4 @@
-# 📹 Página de Listagem de Vídeos no YouTube
+# 🎥 Página de Listagem de Vídeos no YouTube
 
 Bem-vindo ao repositório da **Página de Listagem de Vídeos no YouTube**! Este projeto é uma excelente oportunidade para colocar em prática todos os conceitos aprendidos em CSS, especialmente o uso do Grid Layout.
 
