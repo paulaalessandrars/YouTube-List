@@ -1,0 +1,235 @@
+/* Reset */
+/* Remove a margem e o preenchimento padrão de todos os elementos e define box-sizing para incluir padding e border no tamanho total do elemento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", "Arial", sans-serif;
+    word-wrap: break-word;
+}
+
+/* Body */
+/* Define a fonte principal da página e a cor de fundo */
+body {
+    background-color: #f9f9f9;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 240px 1fr;
+    grid-template-areas:
+        "header header"
+        "sidebar main";
+    height: 100vh;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+/* Header */
+/* Estiliza o cabeçalho como um container flexível, com itens espaçados uniformemente e alinhados ao centro */
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 24px 0px 24px;
+    background-color: white;
+    color: black;
+}
+
+/* Estiliza a logo do menu no cabeçalho */
+header .menu-logo button {
+    width: 24px;
+    height: 24px;
+    top: 16px;
+    left: 24px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Estiliza a logo yotube no cabeçalho */
+header .logo img {
+    width: 90px;
+    height: 20px;
+    top: 18px;
+    left: 80px;
+    margin-left: -170px; /* Alinha a logo de acordo com o layout */
+    cursor: pointer;
+}
+
+
+/* Estiliza a barra de pesquisa no cabeçalho */
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 40px;
+    border: 1px solid #CCCCCC;
+    border-radius: 40px;
+    margin-right: 250px;
+}
+
+/* Estiliza o campo de entrada na barra de pesquisa */
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 40px 0 0 40px;
+    background-color: #FFFFFF;
+}
+
+/* Estiliza o botão da barra de pesquisa */
+.search-bar button {
+    display: flex; /* Utiliza flexbox para o alinhamento */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px;
+    width: 57px;
+    height: 40px;
+    border: none;
+    background-color: #F8F8F8;
+    cursor: pointer;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    border-radius: 0px 40px 40px 0px;
+}
+
+
+/* Estiliza os ícones de usuário no cabeçalho */
+.user-icons button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+.sidebar {
+    width: 300px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li{
+    list-style: none;
+    padding: 12px;
+    margin: 0;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.sidebar-item a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.sidebar-item a:hover {
+    color: #000000;
+    font-weight: 700;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+.video-list {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Ajuste para que as colunas ocupem o espaço disponível */
+    gap: 16px;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 0; /* Remove o padding à esquerda */
+    margin-left: 0; /* Certifique-se de que não há margem indesejada */
+    background-color: #ffffff;
+}
+
+.video-card {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 1px;
+    text-align: center;
+    width: 282px;
+    height: 262px;
+}
+
+
+.video-card img {
+    width: 250px;
+    height: 140px;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+.channel-logo {
+    display: flex;
+    margin-top: 10px;
+}
+
+.channel-logo img {
+    margin: 5px;
+    width: 42px;
+    height: 42px; 
+
+}
+
+.channel-logo h5 {
+    width: 197px;
+    height: 74px;
+    font-weight: 600;
+    line-height: 16,41px;
+    font-size: 13.5px;
+    margin-top: 5px;
+    text-align: left;
+    letter-spacing: 1.5;
+    margin: 6px;
+}
+
+
+.video-details {
+    width: 197px;
+    height: 74px;
+    margin-top: -35px;
+    margin-left: 58px;
+    color: #515151;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1.5;
+    line-height: 14.06px;
+    text-align: left;
+}
+
+.video-details-scrum {
+    width: 197px;
+    height: 74px;
+    margin-top: -50px;
+    margin-left: 58px;
+    color: #515151;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.06px;
+    text-align: left
+}
